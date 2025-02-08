@@ -28,13 +28,13 @@
 <body>
     <h1>MY FIRST CRUD USING EXPRESS</h1>
     <div class="card text-center">
-        <form action="/crud.html" method="POST">
+        <form action="/show" method="POST">
             <label for="user_name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="user_name" placeholder="Entre your name">
+            <input type="text" class="form-control" id="user_name" name="user_name" placeholder="Entre your name" required>
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" placeholder="Entre your Email">
+            <input type="email" class="form-control" id="email" name="email" placeholder="Entre your Email" required>
             <label for="comment" class="form-label">Comment</label>
-            <textarea class="form-control" id="comment" rows="3"></textarea>
+            <textarea class="form-control" id="comment" name="comment" rows="3" required></textarea>
             <input type="submit" value="Send Your felling" class="sub">
         </form>
     </div>
